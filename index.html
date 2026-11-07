@@ -5,28 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f7fc">
   <title>一页账 · 演示版</title>
-  <link rel="stylesheet" href="style.css">
+  <script type="module" crossorigin src="/yiyezhang-demo/assets/index-BRI3oRvA.js"></script>
+  <link rel="stylesheet" crossorigin href="/yiyezhang-demo/assets/index-CwZtg646.css">
 </head>
 <body>
   <div class="app-shell">
     <aside class="sidebar" aria-label="主导航">
       <div class="brand"><span class="brand-mark" aria-hidden="true">◧</span><div><strong>一页账</strong><small>全部为虚构数据</small></div></div>
       <nav id="side-nav" class="side-nav"></nav>
-      <div class="sidebar-bottom"><span class="status-dot"></span> 演示数据截至 <span id="sidebar-date"></span><small>仅供体验界面与报表</small></div>
+      <div class="sidebar-bottom"><span class="status-dot"></span> <span id="sidebar-mode-label">演示数据截至</span> <span id="sidebar-date"></span><small>仅供体验界面与报表</small></div>
     </aside>
     <div class="main-wrap">
       <header class="topbar">
         <div class="mobile-brand"><span class="brand-mark" aria-hidden="true">◧</span><strong>一页账</strong></div>
         <div class="page-heading"><h1 id="page-title">总览</h1><span id="page-subtitle"></span></div>
-        <div class="top-actions"><button class="search-shortcut" id="search-shortcut" type="button"><span id="search-icon"></span><span>搜索记录</span><kbd>⌘ K</kbd></button><span class="demo-badge">演示数据</span></div>
+        <div class="top-actions"><button class="search-shortcut" id="search-shortcut" type="button"><span id="search-icon"></span><span>搜索记录</span><kbd>⌘ K</kbd></button><span class="demo-badge">演示数据</span><div id="account-actions"></div></div>
       </header>
       <main id="app-content" tabindex="-1"></main>
     </div>
   </div>
   <nav id="mobile-nav" class="mobile-nav" aria-label="手机导航"></nav>
   <div id="modal-root"></div>
-  <script src="data.js"></script>
-  <script src="core.js"></script>
-  <script src="app.js"></script>
+  <div id="account-overlay"></div>
+  <div id="account-toast" role="status" aria-live="polite"></div>
 </body>
 </html>
